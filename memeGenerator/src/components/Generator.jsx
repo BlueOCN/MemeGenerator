@@ -18,7 +18,11 @@ function Generator(){
     }, [])
 
     function getNewMeme(){
-        
+        const randInt = Math.floor(Math.random() * allMemes.length)
+        setMeme(prevMeme => ({
+            ...prevMeme,
+            randomImg: allMemes[randInt].url
+        }))
     }
 
     function handleChange(event){
@@ -28,8 +32,6 @@ function Generator(){
             [name]: value
         }))
     }
-
-    // console.log(meme)
 
     return (
         <div className="memes">
