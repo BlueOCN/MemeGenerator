@@ -58,7 +58,7 @@ function Generator(){
             </button>
             <div className="meme">
                 <img 
-                    className="memes--img" 
+                    className="meme--img" 
                     src={meme.randomImg} 
                     alt="Example" 
                 />
