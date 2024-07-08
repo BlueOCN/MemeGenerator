@@ -1,10 +1,11 @@
+import trollIcon from '../assets/trollface.png'
 
 function Header() {
     return (
         <div className="header">
             <img
                 className="header--logo"
-                src="./src/assets/trollface.png" 
+                src={trollIcon} 
                 alt="Troll Face" 
             />
             <h3 className="header--title">Meme Generator</h3>

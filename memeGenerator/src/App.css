@@ -26,6 +26,9 @@
 
 .header--title {
   margin-right: auto;
+
+  cursor: default;
+
   font-family: 'Karla', sans-serif;
   font-size: 20.75px;
   font-weight: 600;
@@ -37,6 +40,8 @@
 }
 
 .header--subtitle {
+  cursor: default;
+
   font-family: 'Inter', sans-serif;
   font-size: 12px;
   font-weight: 400;
@@ -49,8 +54,8 @@
 
 .memes {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
+  grid-template-columns: 1 1;
+  grid-template-rows: 1 1 1;
   column-gap: 33px;
   row-gap: 16px;
 
@@ -79,8 +84,7 @@
 
   border: 1px solid;
   border-radius: 5px;
-  border-color: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);;
-
+  border-color: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
   background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
 
   cursor: pointer;
@@ -93,4 +97,10 @@
   text-align: center;
   vertical-align: top;
   color: #FFFFFF;
+}
+
+.memes--img {
+  grid-area: 3 / 1 / 4 / 3;
+  width: 100%;
+  border-radius: 5px;
 }
