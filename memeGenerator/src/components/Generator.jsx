@@ -56,11 +56,15 @@ function Generator(){
                 onClick={getNewMeme}
                 >Get a new meme image  🖼
             </button>
-            <img 
-                className="memes--img" 
-                src={meme.randomImg} 
-                alt="Example" 
-            />
+            <div className="meme">
+                <img 
+                    className="memes--img" 
+                    src={meme.randomImg} 
+                    alt="Example" 
+                />
+                <h2 className="meme--text top">{meme.topText}</h2>
+                <h2 className="meme--text bottom">{meme.bottomText}</h2>
+            </div>
         </div>
     )
 }
